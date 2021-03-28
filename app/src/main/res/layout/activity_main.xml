@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity">
+
+    <include
+        android:id="@+id/myToolBar"
+        layout="@layout/toolbar" />
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/myAppBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginRight="0dp"-->
+<!--        android:layout_marginBottom="0dp">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/myToolBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:title="HelloWorld"-->
+<!--            app:titleTextColor="#EEE" />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myToolBar"
+        android:layout_above="@+id/navigation_bar"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/navigation_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:itemBackground="@color/colorPrimary"
+    app:itemTextColor="#111"
+    app:itemIconTint="#111"
+    app:menu = "@menu/menu_navigation"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

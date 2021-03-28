@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/aboutActivity">
+
+    <activity
+        android:id="@+id/aboutActivity"
+        android:name="com.example.recyclerviewtesting.SubscriptionActivity"
+        android:label="activity_about"
+        tools:layout="@layout/activity_subscription" />
+    <activity
+        android:id="@+id/dashBoardActivity"
+        android:name="com.example.recyclerviewtesting.NewContentActivity"
+        android:label="activity_dash_board"
+        tools:layout="@layout/activity_new_items" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.recyclerviewtesting.HomeActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
